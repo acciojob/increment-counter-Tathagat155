@@ -1,8 +1,15 @@
 //your JS code here. If required.
- let p=document.getElementById("counter");
-  let button=document.getElementById("btn");
-  p.addEventListener("click",()=>{
-	  let incrementValue=parseInt(p.textContent);
-	  alert(incrementValue);
-	  p.textContent=incrementValue+1;
-  });
+// Get elements
+    const counterPara = document.getElementById("counter");
+    const incrementBtn = document.getElementById("incrementBtn");
+
+    // Add click event
+    incrementBtn.addEventListener("click", function() {
+      let currentValue = parseInt(counterPara.textContent);
+
+      // Alert the un-incremented value
+      alert(currentValue);
+
+      // Increment the value
+      counterPara.textContent = currentValue + 1;
+    });
